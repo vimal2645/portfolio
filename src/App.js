@@ -6,6 +6,8 @@ import Projects from './components/projects';
 import Contact from './components/contact';
 import Certifications from './components/certifications';
 import Education from './components/education';
+// Trigger Vercel redeploy
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
