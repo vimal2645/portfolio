@@ -1,0 +1,92 @@
+.contact-container {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #ffffff;
+  min-height: 100vh;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffe5;
+  text-shadow: 0 0 8px #00ffe5cc, 0 0 16px #00ffe577;
+  animation: fadeInDown 1s ease;
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  animation: fadeInUp 1.2s ease;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  border: 2px solid #00ffe5;
+  background: transparent;
+  color: #00ffe5;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #00ffe555;
+}
+
+.contact-btn:hover {
+  background-color: #00ffe5;
+  color: #1f1c2c;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe5aa, 0 0 30px #00ffe588;
+}
+
+.contact-footer {
+  margin-top: 50px;
+  font-size: 1rem;
+  color: #cccccc;
+  animation: fadeInUp 2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

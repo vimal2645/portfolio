@@ -1,0 +1,82 @@
+.certifications-container {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.certifications-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ffaa;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 0 15px #00f0ff33;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+  text-align: center;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px #00f0ffaa, 0 0 35px #00f0ff66;
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #00f0ff66;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cert-card img:hover {
+  transform: scale(1.02);
+}
+
+.cert-card p {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 0 5px #00f0ff66;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
